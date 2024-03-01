@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat+Alternates&display=swap');
+
+:root {
+    --cor-principal: #9195cd;
+    --cor-secundaria: #ECDFC5;
+    --cor-terciaria: #2B2B3E;
+    
+    --font-principal: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat, sans-serif';
+     }
+*{
+    margin: 0;
+    padding: 0;
+   
+    
+}
+body{
+    margin: 1%;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: var(--cor-terciaria);
+    background-repeat: no-repeat;;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(/image/back.png);
+   
+}
+.apresentacao{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    gap: 30%;
+
+}
+textarea{
+    border: 0.3rem solid var(--cor-secundaria);
+    border-radius: 1rem;
+    width: 30rem;
+    height: 50rem;
+    font-size: 5rem;
+    resize: none;
+}
+.campo textarea:focus{
+  background:  var(--cor-terciaria);
+}
+.cabecalho {
+    margin: 0%;
+    padding: 2%;
+    color: var(--cor-secundaria);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--cor-terciaria);
+    font-size: large;
+    font-family: var(--font-principal);
+    align-items: center;
+}
+.cabecalho-image {
+    max-width: 10rem;
+    max-height: 10rem;
+    width: auto;
+    height: auto;
+
+}
+.letras{
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    font-family: var(--font-principal);
+}
+#exclamacao{
+    width: 2rem;
+    height: 2rem;
+}
+.container-input .input{
+    width: 400px;
+    height: 330px;
+
+}
+
+#input-texto {
+    border: 0.3rem solid var(--cor-secundaria);
+    border-radius: 1rem;
+    width: 30rem;
+    height: 50rem;
+    font-size: 5rem;
+    color: var(--cor-principal);
+    background: solid var(--cor-principal);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--cor-terciaria);
+    outline: 0;
+    padding: 1rem;
+    text-transform: lowercase;
+}
+#input-texto:focus{
+    background-color: var(--cor-secundaria);
+    color:var(--cor-terciaria);
+    border: 0.4rem solid var(--cor-principal);
+}
+#output{
+    
+   font-size: 5rem;
+    border: 3px transparent var(--cor-secundaria);
+    border-radius: 20px;
+    width: 30rem;
+    height: 50rem;
+    font-size: 3rem;
+    font-family: var(--font-secundaria);
+    color: var(--cor-principal);
+    resize: 0;
+
+}
+
+    
+#output span {
+    font-size: 3rem;
+    font-family: var(--font-secundaria);
+    color: var(--cor-principal);
+    text-align: center;
+
+}    
+#output img {
+    display: flexbox;
+    flex-direction: row;
+    width: 30rem;
+    height: 40rem;
+    margin-top: 2%;
+    margin right: 40%;
+    animation: anime 1.2s infinite;
+    border-radius:50%;
+}
+@keyframes anime {
+    50% {
+        transform: translateY(10%);
+    }
+
+}
+.buttons{
+    margin: 6%;
+    margin-top: 12%;
+    margin-right: 6%;
+}
+button{
+    display: inline;
+    justify-content: center;
+    
+   margin-right: 3%;
+    
+}
+.Criptografar {
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 15%;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 12rem;
+    height: 3rem;
+    margin-left: 0.2rem;
+    cursor: pointer;
+}
+.Descriptografar {
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 15%;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 12rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-copiar {
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 15%;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 12rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-copiar:hover {
+    border: 2px solid var(--cor-terciaria);
+    color: var(--cor-principal);
+    transition: 0.5s all;
+}
+.Criptografar:hover {
+    border: 2px solid var(--cor-terciaria);
+    color: var(--cor-principal);
+    transition: 0.5s all;
+}
+.Descriptografar:hover{
+    border: 2px solid var(--cor-terciaria);
+    color: var(--cor-principal);
+    transition: 0.5s all;
+}
+.rodape{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    align-items: center;
+    text-align-last: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-family: var(--font-secundaria);
+    height: 8rem;
+    width: 100%;
+    justify-content: space-between;
+
+}
+ion-icon{ 
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    width: 3rem;
+    height: 3rem;
+
+}
+@media (max-width:1200px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+    background-image{
+        background-color: var(--cor-terciaria));
+    } 
+    .Cabecalho {
+        padding: auto;
+    }
+    .Cabecalho__menu {
+        padding: auto;
+    }
+    #output{
+        flex-direction: column-reverse;
+        padding: auto;
+    }
+    #input{
+        padding: auto;
+    }
+    button{
+        padding: auto;
+    }
+    }
+    .Rodape {
+        padding: auto;
+    }
+}

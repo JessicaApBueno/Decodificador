@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+</head>
+<link rel="stylesheet" href="./css/Notmalize.css">
+<link rel="stylesheet" href="./css/Style.css">
+<link  rel="shortcut icon" href="./image/logoJeh.png">
+
+<body>
+
+<header class="cabecalho">
+    <img class="cabecalho-image" src="./image/logoJeh.png" alt="Logo Alura">
+    <h1> Decodificador de Texto</h1>
+</header>
+
+<main class="apresentacao">
+    <section>
+    <div class="container-input">
+    <div class="input">
+    <textarea id="input-texto" placeholder="Digite seu texto" ></textarea>
+    <div>
+        <img src="./image/exclamation.png" alt="Exclamcao" id="exclamacao">
+        <p class="letras"> Apenas letras minúsculas e sem acento.</p1>   
+        </div> 
+    </section>
+   
+    <section>
+    <div id="output">
+        <h2> </h2>
+        <span> </span>
+        <img src="./image/suamenssagem.png" alt="Sua menssagem aparecerá aqui" >
+    </section>
+    
+
+  
+   
+   
+</main>
+<div class="buttons">
+    <div class="container-btn"></div>
+    <button onclick="criptografar()"  class="Criptografar">Criptografar</button>
+    <button onclick="descriptografar()" class="Descriptografar">Descriptografar</button>
+   
+</div>
+
+<footer class="rodape">
+    <h2> Desenvolvido por Jessica Bueno</h2>
+    
+    <div class icons>
+        <a href="https://www.linkedin.com/in/jessica-bueno-49a18b1ab/"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://github.com/JessicaApBueno"><ion-icon name="logo-github"></ion-icon></a>
+    </div>
+</footer>
+
+<body>
+    <script src= "app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
